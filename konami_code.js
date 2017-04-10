@@ -1,6 +1,8 @@
 const code = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65]
 
 function init() {
+  //to not have index be global you need to move function of keyhandler into
+  //proper scope/inside function to get access to index variable
   var index = 0
   dbody = document.querySelector('body')
   dbody.addEventListener('keydown', onKeyDownHandler)
