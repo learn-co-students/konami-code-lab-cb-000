@@ -33,5 +33,42 @@
 
     <!-- Include Flatiron School's minified test runner to push results to Learn. -->
     <script src="node_modules/learn-browser/learnBrowser.min.js"></script>
+
+  <script>
+//  const alphabet = ['a', 'b', 'c'];
+const alphabet = [
+  "ArrowUp",
+  "ArrowUp",
+  "ArrowDown",
+  "ArrowDown",
+  "ArrowLeft",
+  "ArrowRight",
+  "ArrowLeft",
+  "ArrowRight",
+  "b",
+  "a"
+];
+  let index = 0;
+  function triggerKeyDown(e) {
+  const key = e.key;
+  console.log(`Key pressed:  ${key}`);
+
+  if (key === alphabet[index]) {
+    index++;
+
+    if (index === alphabet.length) {
+      alert("Hurray!");
+
+      index = 0;
+    }
+  } else {
+    index = 0;
+  }
+}
+//  function keyPressEvent(e) {
+//         var x = e.which;
+//  }
+  document.addEventListener("keypress", function(z) { triggerKeyDown(z) });
+   </script>
   </body>
 </html>
