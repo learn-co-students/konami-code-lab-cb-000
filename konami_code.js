@@ -1,18 +1,35 @@
+const codes = [
+  "ArrowUp",	  "ArrowUp",
+  "ArrowUp",	  "ArrowUp",
+  "ArrowDown",	  "ArrowDown",
+  "ArrowDown",	  "ArrowDown",
+  "ArrowLeft",	  "ArrowLeft",
+  "ArrowRight",	  "ArrowRight",
+  "ArrowLeft",	  "ArrowLeft",
+  "ArrowRight",	  "ArrowRight",
+  "b",	  "b",
+  "a"	  "a"
+];
 
-  const codes = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65];
 
-  function init() {
-    // your code here	  let index= 0
-  }
-      document.body.addEventListener("keydown", function(e){
-      const key = e.key
+ function init() {	function init() {
+  // your code here	  let index = 0;
+}
+  document.body.addEventListener('keydown', function onKeyDownHandler(e){
 
-        index = (codes[index] === key) ? ++index : 0
+     const key = e.key;
 
-        if (index === codes.length) {
-        window.alert("Hurray!");
-        index = 0
-      }
+     if (key === codes[index]) {
+      index++;
 
-      });
-   }
+     if (index === codes.length) {
+      window.alert("Hurray!");
+
+       index = 0;
+    }
+    } else {
+      index = 0;
+    }
+    }
+  )
+}
