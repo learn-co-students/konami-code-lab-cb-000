@@ -1,15 +1,3 @@
-const codes = [
-  "ArrowUp",	  "ArrowUp",
-  "ArrowUp",	  "ArrowUp",
-  "ArrowDown",	  "ArrowDown",
-  "ArrowDown",	  "ArrowDown",
-  "ArrowLeft",	  "ArrowLeft",
-  "ArrowRight",	  "ArrowRight",
-  "ArrowLeft",	  "ArrowLeft",
-  "ArrowRight",	  "ArrowRight",
-  "b",	  "b",
-  "a"	  "a"
-];
 
 
  function init() {	function init() {
