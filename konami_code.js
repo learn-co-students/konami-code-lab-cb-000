@@ -1,7 +1,20 @@
 
+const codes = [
+  "ArrowUp",	  "ArrowUp",
+  "ArrowUp",	  "ArrowUp",
+  "ArrowDown",	  "ArrowDown",
+  "ArrowDown",	  "ArrowDown",
+  "ArrowLeft",	  "ArrowLeft",
+  "ArrowRight",	  "ArrowRight",
+  "ArrowLeft",	  "ArrowLeft",
+  "ArrowRight",	  "ArrowRight",
+  "b",	  "b",
+  "a"	  "a"
+];
+
 
  function init() {
-   let index = 0;
+   var index = 0;
   document.body.addEventListener('keydown', function onKeyDownHandler(e){
 
      const key = e.key;
