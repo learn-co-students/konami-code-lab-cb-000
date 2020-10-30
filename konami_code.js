@@ -12,5 +12,19 @@ const codes = [
 ];
 
 function init() {
-  // your code here
+  document.body.addEventListener("keydown", (e) => {
+    let i = 0;
+
+      if (e.key === codes[i]) {
+        i++;
+
+        if (i === codes.length) {
+          alert("Hurray!");
+          i = 0
+        }
+      } else {
+        i = 0;
+      }
+    }
+  });
 }
